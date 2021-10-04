@@ -28,10 +28,10 @@ const person = {
     lastname: 'sah',
     hobbies: ['Current affairs', 'tv shows'],
     address: {
-        streetaddress: '33-34/506/1',
-        city: 'Anjar',
-        state: 'Gujarat',
-        pincode: 370110
+        streetaddress: '01/45',
+        city: 'Jaipur',
+        state: 'Rajasthan',
+        pincode: 303002
     }
 }
 person.email = 'jivendrasah33@gmail.com'
