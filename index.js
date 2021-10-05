@@ -36,7 +36,7 @@ const person = {
 }
 person.email = 'jivendrasah33@gmail.com'
 console.log(person.firstname, person.lastname, person.address, person.hobbies[1])
-console.log(person.email)
+console.log(person.email,person.address.city)
 
 // array of objects
 
@@ -44,7 +44,7 @@ const todo = [
     {
         id: 1,
         text: 'Learn javascript',
-        iscompleted: false
+        iscompleted: true
     },
     {
         id: 2,
@@ -63,4 +63,77 @@ console.log(todo[0])
 const todoJSON = JSON.stringify(todo)
 console.log(todoJSON)
 
+//LOOPS
+console.log("------------")
+for (let i = 0; i < todo.length ;i++) {
+    console.log(todo[i].text)
+}
+console.log("------------")
+for (let x of todo) {
+    console.log(x.text)
+}
+let i = 0
+while(i<3){
+    //statements
+    console.log("Hello")
+    i++
+}
+
+//high order array methods : forEach, map, filter 
+todo.forEach(function(x) {
+    console.log(x.text)
+})
+
+//map returns an array
+const todoText = todo.map(function(x) {
+    return x.text
+})
+
+console.log(todoText)
+
+const todoCompleted = todo.filter(function(x){
+    return x.iscompleted === true
+}).map(function(x){
+    return x.text
+})
+console.log(todoCompleted)
+
+// Conditional statements
+let x = '10'
+if(x == 10){
+    console.log("X is 10")
+} // == matched value and not datatype 
+//=== will also match data type
+if (x === 10 || x < 11){
+    console.log("True")
+} else if (x == 9) {
+    console.log(false)
+} else {
+    console.log("Not matched")
+}
+
+let color = (x == 10) ? 'red' : 'blue'
+console.log(color)
+
+switch(color) {
+    case 'red': 
+        console.log('Color is red')
+        break
+    case 'blue':
+        console.log('Color is blue')
+        break
+    default:
+        console.log('neither')
+        break
+}
+
+//functions
+function addNums(num1 = 1, num2 = 2) { 
+    //assigned values will be used if noting is passed
+    return num1+num2
+}
+console.log(addNums(10,11))
+console.log(addNums())  // assigned values of parameters used
+
+//OOP
 
