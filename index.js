@@ -135,5 +135,20 @@ function addNums(num1 = 1, num2 = 2) {
 console.log(addNums(10,11))
 console.log(addNums())  // assigned values of parameters used
 
+//variable - practices
+    const t_var = 1 //constant variable, values cannot be changed afterwards
+    temp_var = 1 //this is allowed in non "use strict" mode
+
+    //There is a widespread practice to use constants as aliases for difficult-to-remember values that are known prior to execution.
+
+    // Such constants are named using capital letters and underscores.
+    const COLOR_RED = "#F00";
+    const COLOR_GREEN = "#0F0";
+    const COLOR_BLUE = "#00F";
+    const COLOR_ORANGE = "#FF7F00";
+    // ...when we need to pick a color
+    color = COLOR_ORANGE;
+    console.log(color); // #FF7F00
 //OOP
+
 
