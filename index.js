@@ -135,6 +135,36 @@ function addNums(num1 = 1, num2 = 2) {
 console.log(addNums(10,11))
 console.log(addNums())  // assigned values of parameters used
 
+//arrow functions
+let sum = (a, b) => a + b;
+
+/* Short form of
+let sum = function(a, b) {
+  return a + b;
+};   */
+
+let pro = n => n*2 // we can ommit the paranthesis if no of arguments is 1
+
+sum = (a,b) => {
+    let result = a+b
+    return result
+};   //multiline arrow functions
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes();
+//     else no();
+//   }
+  
+//   ask(
+//     "Do you agree?",
+//     () => alert("You agreed."),
+//     () => alert("You canceled the execution.")
+// );
+
+//interaction - alert, promt, confirm
+/*  alert() - shows message and waits for user to press ok
+/*  result = prompt(title, default)  here title is the text of modal window, default is the default test inside the input bar*/
+result = prompt('This is the title', 'Default value in the input field')
+
 //variable - practices
     const t_var = 1 //constant variable, values cannot be changed afterwards
     temp_var = 1 //this is allowed in non "use strict" mode
