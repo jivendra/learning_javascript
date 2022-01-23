@@ -1,0 +1,12 @@
+
+.interface div{
+    width: 300px;
+    padding: 5px;
+    border: 2px solid black;
+    margin: 20px 0;
+}
+
+.interface a{
+    text-decoration: none;
+    color: black;
+}
