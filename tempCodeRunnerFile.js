@@ -1,0 +1,1 @@
+//IIFE - Immediately Invoked Function Expressions - functions that are invoked immediately once the browser reaches them.
